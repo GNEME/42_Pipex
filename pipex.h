@@ -14,6 +14,7 @@
 # define PIPEX_H
 # define BUFFER_SIZE 42
 # include <unistd.h>
+# include <sys/wait.h>
 # include <fcntl.h>
 # include <stdlib.h>
 # include <string.h>

@@ -124,6 +124,8 @@ int	main(int ac, char **argv, char **envp)
 	int	infile_fd;
 	int	outfile_fd;
 
+	if (ac < 2)
+		return (1);
 	pipex_norm3(ac, argv, &infile_fd, &outfile_fd);
 	close(infile_fd);
 	if (my_cmp(argv[1], "here_doc", 0, 0))
